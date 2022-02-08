@@ -1,0 +1,26 @@
+/* --- Docs: Visit https://aka.ms/tsconfig.json to read more about this file
+	Este arquivo de configuração é um conjunto de metadados que serão usados durante a transpilação do código (Conversão de TypeScript para JavaScript).
+
+*/
+{
+	"compilerOptions": {
+		"target": "es2019", 
+		"module": "commonjs", 
+		"moduleResolution": "node",
+		"rootDir": "src",  /* Conjunto de scripts / files */
+		/* --- @types = Arquivos de definição do TypeScript 
+			Quando uma biblioteca está em JS Puro, é necessário desenvolver um conjunto de interfaces e publicar como @Types
+			Isso faz parecer que a lib está em TypeScript, trazendo uma série de beneficios, como autocompletar, sugestões, etc.
+		*/
+		"typeRoots": [     
+			"./src/@types",
+			"./node_modules/@types"
+		],
+		"outDir": "./dist",  /* Onde vai ser transpilado os fontes, vai ser o build do projeto,o qur vai para produção */
+		"removeComments": true, /* Remover comentários durante a build */
+		"esModuleInterop": true, 
+		"forceConsistentCasingInFileNames": true,
+		"strict": true, /* Importante para sempre realizar as validações */
+		"skipLibCheck": true 
+	}
+}
