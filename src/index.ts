@@ -31,7 +31,15 @@ app.use(usersRoute);
 // ======================== Configurações dos Handlers
 app.use(errorHandler);  // Middleware Error Handler (src/middlewares/error-handler.ts)
 
-// ======================== Inicialização do servidor (Subir e ficar escutando na porta 3000)
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
-});
+// ======================== Inicializando servidor (Subir e ficar escutando na porta)
+// ----- Run project locally
+// app.listen(3000, () => {
+//     console.log('Server running on port 3000');
+// });
+
+/* ----- Run project Heroku
+    A porta é provida pelo Heroku e não tem como saber de antemão.
+    Heroku usa variável de ambiente chamada process.env.PORT para armazenar a porta. 
+*/ 
+var porta = process.env.PORT || 8080;
+app.listen(porta);
