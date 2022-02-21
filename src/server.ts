@@ -23,7 +23,6 @@ app.listen(3000, () => {
     npm run build
         node ./dist/index.js
     npm run start
-        http://localhost:3000/status
 
     ----- Executar o server de forma automática:
     - Instalação e configuração do ts-node-dev
