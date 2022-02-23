@@ -39,7 +39,11 @@ app.use(errorHandler);  // Middleware Error Handler (src/middlewares/error-handl
 
 /* ----- Run project Heroku
     A porta é provida pelo Heroku e não tem como saber de antemão.
-    Heroku usa variável de ambiente chamada process.env.PORT para armazenar a porta. 
+    Heroku usa a variável de ambiente chamada process.env.PORT para armazenar a porta. 
 */ 
-var porta = process.env.PORT || 8080;
-app.listen(porta);
+app.listen(process.env.PORT || 8080);
+
+// app.listen(process.env.PORT || 3000, function(){
+//     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+// });
+  

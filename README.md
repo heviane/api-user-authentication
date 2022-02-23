@@ -1,9 +1,11 @@
 # api-ms-authentication
 
-API for user authentication with token.
+API para autenticação de usuários com Token JWT.
 
-## Server in Node and TypeScript
+## Stacks
 
+- JavaScript
+- TypeScript
 - Express Library
 - Routes
 - Middlewares
@@ -33,6 +35,8 @@ Heroku acessa o **package.json** do projeto e busca pelo script **“start”**.
 `npm start`
 
 Criar o arquivo **Procfile** para especificar as configurações para o Heroku.
+
+`web: npm start`
 
 ## References
 
