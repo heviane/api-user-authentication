@@ -1,6 +1,6 @@
-# api-ms-authentication
+# API para autenticação de usuários
 
-API para autenticação de usuários com Token JWT.
+Node API with Express and TypeScript for user authentication microservice with JWT Token
 
 ## Stacks
 
